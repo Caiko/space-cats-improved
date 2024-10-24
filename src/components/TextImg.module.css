@@ -1,0 +1,60 @@
+/* Much easier to find the CSS for the styling of the component when its all in a separate file */
+
+.textimg {
+  width: 466px;
+  height: 463px;
+}
+
+.textsection {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: max-content;
+  height: max-content;
+}
+
+.textsection.top {
+  align-self: flex-start;
+}
+
+.textsection.center {
+  align-self: center;
+}
+
+.textsection.bottom {
+  align-self: flex-end;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ptext {
+  width: 466px;
+  height: 57px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* Text color */
+  color: #000000;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Adding this just to be a bit more responsive :) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
